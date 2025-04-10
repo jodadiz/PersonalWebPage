@@ -188,12 +188,10 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-
   .experienceText {
-    width: 100%;
+    width: 80%;
     padding-bottom: 20px;
   }
-
   .experienceText img {
     max-width: 90%;
     margin-top: 20px;
