@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jose David | Technical Training Development</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/3a891a5c4e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#Experience">Experience</a></li>
+      <li><a href="#Home">Home</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>José David Díaz Pérez</h1>
+    <p class="tagline">Electrical Engineering Student passionate about technology and innovation</p>
+
+  </header>
+
+  <main>
+    <div class="aboutContainer">
+      <div class="aboutText">
+        <h2 id="Home">About Me</h2>
+        <p> Passionate electrical engineering student with a strong foundation in electrical, electronic, and electromechanical systems. Experienced in communication networks, and programming. Skilled in integrating new projects, and working with embedded systems and hardware design. Proficient in programming and troubleshooting. Strong teamwork and communication skills, with the ability to adapt to dynamic environments. Eager to apply knowledge in real-world industrial applications.</p>
+      </div>
+  
+      <div class="aboutText">
+        <!--Images-->
+        <a href="Images/personal.jpeg">
+          <img src="Images/personal.jpeg" alt="Personal Image" width="50%">
+        </a>
+      </div>
+    </div>
+
+    <div class="experienceText">
+      <h2 id="Experience">Experience</h2>  
+      <h3>Research Assistant in Image Processing and Computer Vision Laboratory IPCV-LAB</h3>
+      <p><strong>Jan 2024 – Aug 2024 and Mar 2025 – Present | San José, Costa Rica</strong></p>
+      <p>
+      During this research experience, I contributed to two major projects in the context of autonomous planetary exploration:
+      </p>
+        <strong>SLAM NIR ToF Monocular:</strong> Assisted in the development of a simultaneous localization and mapping system using Near Infrared and Time-of-Flight video signals for robotic exploration.
+        <br>
+        <strong>3D Motion Estimation of Fast Robots:</strong> Supported the estimation of fast-moving robots’ 3D trajectories using multiprocessing of NIR video and ToF depth signals.
+      <p>
+        Additionally, I led the design, implementation, and testing of a real-time 3D depth visualization system using various sensors (Kinect V2, Stereo Camera, and ToF Camera). This was achieved under Ubuntu using ROS and the PCL library:
+      </p>
+      <ul>
+        <li>Studied ROS Indigo and the Point Cloud Library (PCL).</li>
+        <li>Installed and calibrated necessary sensor drivers and packages.</li>
+        <li>Developed ROS nodes to capture and visualize point clouds in real time from all three depth sensors.</li>
+        <li>Created a comprehensive manual with step-by-step instructions and illustrations for installation, operation, and testing.</li>
+      </ul>
+      <p>
+        <strong>Technologies & Skills:</strong> Ubuntu, ROS, PCL, C/C++, real-time systems, 3D data visualization, sensor integration, SLAM concepts, technical documentation, teamwork, and problem-solving.
+      </p>
+    </div>
+
+    <div class="experienceContainer">
+      <div class="experienceImages">
+        <!--Images-->
+        <a href="Images/Experience1.jpg">
+          <img src="Images/Experience1.jpg" alt="Experience1 Image" width="100%">
+        </a>
+      </div>
+      <div class="experienceImages">
+        <!--Images-->
+        <a href="Images/Experience2.png">
+          <img src="Images/Experience2.png" alt="Experience2 Image" width="100%">
+        </a>
+      </div>
+      <div class="experienceImages">
+        <!--Images-->
+        <a href="Images/Experience3.jpg">
+          <img src="Images/Experience3.jpg" alt="Experience3 Image" width="100%">
+        </a>
+      </div>
+    </div>
+
+    <section class="projects">
+      <h2 id="projects">Projects</h2>
+
+      <div class="aboutContainer">
+        <div class="aboutText">
+          <a href="https://github.com/jodadiz/Selector623" target="_blank"><h3>Automated Aluminum Bar Inspection System – Selector 623</h3></a>
+          <p>
+            This project involved designing a system to measure the speed and length of aluminum bars in real time using ultrasonic sensors and control logic. Developed in <strong>assembly language for the Dragon12-Plus S12 board</strong>, it includes a full HMI with buttons, LEDs, LCD, and a 7-segment display.
+          </p>
+          <p>
+            The system classifies each bar based on length and activates a spray mechanism when the bar meets a configurable threshold. It operates in multiple modes (STOP, CONFIGURE, SELECT) and uses state machines for control and timing.
+          </p>
+          <p>
+            <strong>Skills developed:</strong> embedded systems, FSM design, real-time processing, low-level I/O, HMI development, sensor integration.
+          </p>
+        </div>
+        <div class="aboutText">
+          <!--Images-->
+          <a href="Images/Dragon12.jpg">
+            <img src="Images/Dragon12.jpg" alt="Dragon Image" width="50%">
+          </a>
+        </div>
+      </div>
+
+      <div class="aboutContainer">
+        <div class="aboutText">
+          <!--Images-->
+          <a href="Images/PCS.svg">
+            <img src="Images/PCS.svg" alt="PCS Image" width="50%">
+          </a>
+        </div>
+        <div class="aboutText">
+          <a href="https://github.com/ecoenucr/1S2024_G1" target="_blank"><h3>PCS Design (IEEE 802.3 Clause 36)</h3></a>
+          <p>
+            As part of the final project for the Digital Circuits II course, I designed a Physical Coding Sublayer (PCS) block for the 1000BASE-X Ethernet standard, based on IEEE 802.3 clause 36. The main datapath included essential components such as the 8b/10b encoder and decoder, synchronization, and state machines.
+          </p>
+          <p>
+            The design was implemented in Verilog and validated through a loopback test: data transmitted via <code>TXD</code> was encoded, passed through the PCS, and correctly received through <code>RXD</code> without data corruption. The testbench simulated the transmission of a full Ethernet frame.
+          </p>
+          <p>
+            I worked collaboratively using GitHub and followed a structured methodology: behavioral modeling, modular design (wrapper and state machines), simulation with Icarus Verilog, waveform analysis in GTKwave, and automation with a Makefile.
+          </p>
+          <p>
+            <strong>Skills developed:</strong> Verilog HDL, digital design automation, protocol-based hardware design, testbench development, and simulation-based verification.
+          </p>
+        </div>
+      </div>
+
+      <div class="aboutContainer">
+        <div class="aboutText">
+          <a href="https://github.com/jodadiz/LinearGradientsIntensity" target="_blank"><h3>Linear Intensity Gradients</h3></a>
+          <p>
+            This project was developed for the <strong>IE-0449 Computer Vision</strong> course at the University of Costa Rica. It focuses on implementing gradient-based edge detection using the Sobel operator, both in offline image processing and real-time video analysis.
+          </p>
+          <p>
+            The project consists of two parts: a C-based desktop application that processes <code>.bmp</code> images and generates grayscale, gradient (X and Y), magnitude, and thresholded edge images; and a <strong>ROS node</strong> that processes live video from a USB camera, displaying all intermediate steps in real time using OpenCV.
+          </p>
+          <p>
+            Through this project, I strengthened my skills in <strong>C programming</strong>, <strong>image processing</strong> (Sobel filters, thresholding), <strong>file handling</strong>, and <strong>ROS integration</strong> with <strong>OpenCV</strong> for real-time computer vision applications.
+          </p>
+        </div>
+        <div class="aboutText">
+          <!--Images-->
+          <a href="Images/Bordes.PNG">
+            <img src="Images/Bordes.PNG" alt="Bordes Image" width="50%">
+          </a>
+        </div>
+      </div>
+  
+      <div class="aboutContainer">
+        <div class="aboutText">
+          <!--Images-->
+          <a href="Images/Nexys.jpg">
+            <img src="Images/Nexys.jpg" alt="Nexys Image" width="50%">
+          </a>
+        </div>
+        <div class="aboutText">
+          <a href="https://github.com/jodadiz/DigitalMixer" target="_blank"><h3>Digital Mixer on FPGA Nexys A7</h3></a>
+          <p>
+            As part of the final project for the Digital Circuits Laboratory course (IE-0424), I designed and implemented a real-time digital audio mixer on the <strong>Nexys A7 FPGA</strong>. The system generates musical notes through a PWM-based audio output, controlled by the onboard switches of the FPGA board.
+          </p>
+          <p>
+            Each switch activates a different musical note, synthesized by generating a square wave at a specific frequency. The system was built entirely in <strong>Verilog</strong>, using a modular approach with a frequency control module, pulse-width modulation logic, and clock dividers to support real-time sound generation.
+          </p>
+          <p>
+            The mixer was connected to the audio output jack of the Nexys A7, allowing for direct speaker playback. This project required precise timing control and real-time response, achieved through careful clock management and hardware debugging.
+          </p>
+          <p>
+            <strong>Skills developed:</strong> Verilog HDL, PWM signal generation, modular hardware design, clock division, memory-mapped I/O, real-time digital audio synthesis, FPGA prototyping.
+          </p>    
+        </div>
+      </div>
+
+      <div class="aboutContainer">
+        <div class="aboutText">
+          <a href="https://github.com/jodadiz/MeteorologicalStationArduino" target="_blank"><h3>Meteorological Station using Arduino</h3></a>
+          <p>
+            This project involved building a meteorological station using humidity, temperature, and luminance sensors (via a photoresistor). The data collected from the sensors was displayed both on additional hardware (LCD screen and LEDs) and through a graphical interface built with <strong>WxPython</strong>.
+          </p>
+          <p>
+            The system processed the sensor data in parallel using <strong>pthreads</strong> to ensure tasks were synchronized. The sensor data was sent via the serial port to the computer, where it was shown on the graphical interface, which also generated real-time graphs. The project included designing the necessary circuit to create a fully functional weather station.
+          </p>
+          <p>
+            <strong>Skills developed:</strong> embedded systems, parallel processing with pthreads, sensor integration, hardware design, C++ programming, WxPython for graphical interfaces.
+          </p>
+    
+        </div>
+        <div class="aboutText">
+          <!--Images-->
+          <a href="Images/arduino.PNG">
+            <img src="Images/arduino.PNG" alt="Bordes Image" width="50%">
+          </a>
+        </div>
+      </div>
+
+
+      <div class="aboutContainer">
+        <div class="aboutText">
+          <!--Images-->
+          <a href="Images/laberinto.png">
+            <img src="Images/laberinto.png" alt="laberinto Image" width="50%">
+          </a>
+        </div>
+        <div class="aboutText">
+          <a href="https://github.com/jodadiz/Proyecto_Python_IE0117" target="_blank"><h3>Labyrinth Quest</h3></a>
+          <p>
+            "Labyrinth Quest" is a maze game where players must navigate through different levels, collecting coins to increase their score and a key to complete each level. The game features 10 levels with varying environments and music.
+          </p>
+          <p>
+            The project utilizes Pygame for game development, Numpy for sprite animations, PIL for pixel detection to build the labyrinths, and Json for saving high scores.
+          </p>
+          <p>
+            <strong>Skills developed:</strong> game development, sprite animation, pixel detection, score tracking, Pygame, Numpy, PIL, Json.
+          </p>     
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2 id="contact">📬 Contact</h2>
+      <p><strong>Email:</strong> <a href="mailto:jodadi04@gmail.com">jodadi04@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+50685027470">+506 85027470</a></p>
+      <div class="social-links">
+        <a href="https://github.com/jodadiz" target="_blank" title="GitHub">
+          <i class="fa-brands fa-github fa-2xl" style="color: #000000;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jose-david-diaz-perez/" target="_blank" title="LinkedIn">
+          <i class="fa-brands fa-linkedin fa-2xl" style="color: #0075ce;"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Jose David Diaz Perez
+  </footer>
+
+</body>
+</html>
