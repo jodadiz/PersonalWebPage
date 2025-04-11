@@ -29,7 +29,13 @@
     <div class="aboutContainer">
       <div class="aboutText">
         <h2 id="Home">About Me</h2>
-        <p> Passionate electrical engineering student with a strong foundation in electrical, electronic, and electromechanical systems. Experienced in communication networks, and programming. Skilled in integrating new projects, and working with embedded systems and hardware design. Proficient in programming and troubleshooting. Strong teamwork and communication skills, with the ability to adapt to dynamic environments. Eager to apply knowledge in real-world industrial applications.</p>
+        <!-- <p> Passionate electrical engineering student with a strong foundation in electrical, electronic, and electromechanical systems. Experienced in communication networks, and programming. Skilled in integrating new projects, and working with embedded systems and hardware design. Proficient in programming and troubleshooting. Strong teamwork and communication skills, with the ability to adapt to dynamic environments. Eager to apply knowledge in real-world industrial applications.</p> -->
+        <p>
+          I’m a final-year Electrical Engineering student at the University of Costa Rica with a strong passion for technology, innovation, and knowledge sharing. My academic and project experience has centered around embedded systems, computer vision, and digital design. I’ve worked with tools and frameworks such as C/C++, Verilog, ROS, OpenCV, and PCL, while developing real-time systems and documenting technical implementations clearly and efficiently.
+        </p>
+        <p>
+          I enjoy collaborating across disciplines, learning new technologies quickly, and contributing to projects that combine engineering and impactful communication. I’m especially excited about opportunities like the Technical Training Development Internship at HPE, where I can apply my technical background, instructional mindset, and attention to detail to develop high-quality training materials and content that help others grow.
+        </p>
       </div>
   
       <div class="aboutText">
@@ -49,7 +55,7 @@
       </p>
         <strong>SLAM NIR ToF Monocular:</strong> Assisted in the development of a simultaneous localization and mapping system using Near Infrared and Time-of-Flight video signals for robotic exploration.
         <br>
-        <strong>3D Motion Estimation of Fast Robots:</strong> Supported the estimation of fast-moving robots’ 3D trajectories using multiprocessing of NIR video and ToF depth signals.
+        <strong>3D Motion Estimation of Fast Robots:</strong> Supported the estimation of fast-moving robots 3D trajectories using multiprocessing of NIR video and ToF depth signals.
       <p>
         Additionally, I led the design, implementation, and testing of a real-time 3D depth visualization system using various sensors (Kinect V2, Stereo Camera, and ToF Camera). This was achieved under Ubuntu using ROS and the PCL library:
       </p>
@@ -98,7 +104,7 @@
             The system classifies each bar based on length and activates a spray mechanism when the bar meets a configurable threshold. It operates in multiple modes (STOP, CONFIGURE, SELECT) and uses state machines for control and timing.
           </p>
           <p>
-            <strong>Skills developed:</strong> embedded systems, FSM design, real-time processing, low-level I/O, HMI development, sensor integration.
+            <strong>Skills developed:</strong> embedded systems, RTOS, low-level I/O, HMI development.
           </p>
         </div>
         <div class="aboutText">
@@ -125,7 +131,7 @@
             The design was implemented in Verilog and validated through a loopback test: data transmitted via <code>TXD</code> was encoded, passed through the PCS, and correctly received through <code>RXD</code> without data corruption. The testbench simulated the transmission of a full Ethernet frame.
           </p>
           <p>
-            I worked collaboratively using GitHub and followed a structured methodology: behavioral modeling, modular design (wrapper and state machines), simulation with Icarus Verilog, waveform analysis in GTKwave, and automation with a Makefile.
+            I worked collaboratively using GitHub and followed a structured methodology, simulation with Icarus Verilog, waveform analysis in GTKwave, and automation with a Makefile.
           </p>
           <p>
             <strong>Skills developed:</strong> Verilog HDL, digital design automation, protocol-based hardware design, testbench development, and simulation-based verification.
@@ -167,10 +173,7 @@
             As part of the final project for the Digital Circuits Laboratory course (IE-0424), I designed and implemented a real-time digital audio mixer on the <strong>Nexys A7 FPGA</strong>. The system generates musical notes through a PWM-based audio output, controlled by the onboard switches of the FPGA board.
           </p>
           <p>
-            Each switch activates a different musical note, synthesized by generating a square wave at a specific frequency. The system was built entirely in <strong>Verilog</strong>, using a modular approach with a frequency control module, pulse-width modulation logic, and clock dividers to support real-time sound generation.
-          </p>
-          <p>
-            The mixer was connected to the audio output jack of the Nexys A7, allowing for direct speaker playback. This project required precise timing control and real-time response, achieved through careful clock management and hardware debugging.
+            Each switch activates a different musical note, synthesized by generating a square wave at a specific frequency. The system was built entirely in <strong>Verilog</strong>, the mixer was connected to the audio output jack of the Nexys A7, allowing for direct speaker playback.
           </p>
           <p>
             <strong>Skills developed:</strong> Verilog HDL, PWM signal generation, modular hardware design, clock division, memory-mapped I/O, real-time digital audio synthesis, FPGA prototyping.
@@ -185,10 +188,10 @@
             This project involved building a meteorological station using humidity, temperature, and luminance sensors (via a photoresistor). The data collected from the sensors was displayed both on additional hardware (LCD screen and LEDs) and through a graphical interface built with <strong>WxPython</strong>.
           </p>
           <p>
-            The system processed the sensor data in parallel using <strong>pthreads</strong> to ensure tasks were synchronized. The sensor data was sent via the serial port to the computer, where it was shown on the graphical interface, which also generated real-time graphs. The project included designing the necessary circuit to create a fully functional weather station.
+            The sensor data was sent via the serial port to the computer, where it was shown on the graphical interface, which also generated real-time graphs. The project included designing the necessary circuit to create a fully functional weather station.
           </p>
           <p>
-            <strong>Skills developed:</strong> embedded systems, parallel processing with pthreads, sensor integration, hardware design, C++ programming, WxPython for graphical interfaces.
+            <strong>Skills developed:</strong> Arduino, sensor integration, hardware design, C++ programming, WxPython for graphical interfaces.
           </p>
     
         </div>

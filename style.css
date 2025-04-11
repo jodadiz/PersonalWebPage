@@ -16,6 +16,25 @@ header {
   width: auto;
 }
 
+header {
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); /* oscurece la imagen */
+  z-index: 1;
+}
+
+header h1, .tagline {
+  position: relative;
+  z-index: 2;
+}
+
 header h1 {
   margin-top: 40px;
   font-size: 2.5rem;
@@ -36,9 +55,10 @@ main {
 .aboutContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: baseline;
+  justify-content: space-between; /* o center, según lo que busques */
   align-items: center;
   padding: 40px;
+  border: black 2px;
 }
 .aboutContainer h3{
   color: #A25E1B;
@@ -55,10 +75,9 @@ main {
  .aboutContainer h2 {
   color: #CC6600;
   padding-bottom: 0.3rem;
-  text-align: center;
 }
 .aboutContainer p {
-  text-align: left;
+  text-align: justify;
 }
 .aboutContainer h3:hover{
   color: #4D3926;
@@ -68,10 +87,11 @@ main {
 .experienceContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: baseline;
+  justify-content: space-between; /* o center, según lo que busques */
   align-items: center;
-  padding: 40px;
-  gap: 2%;
+  padding: 100px;
+  padding-top: 0;
+  gap: 0;
 }
 .experienceImages {              
   flex: 1;
@@ -84,10 +104,8 @@ main {
   align-items: center;
 }
 .experienceText{
-  margin-top: 0px;
-  padding-top: 0px;
-  padding-left: 40px;
-  padding-right: 40px;
+  margin: 100px;
+  margin-bottom: 0;
 }
 h2 {
   color: #CC6600;
@@ -99,16 +117,14 @@ h2 {
 .experienceText h3{
   color: #A25E1B;
 }
-.experienceText h2{
-  text-align: center;
-}
 
-.aluminiumText{
-  text-align: left;
-}
 
 ul {
   padding-left: 1.2rem;
+}
+
+.projects{
+  padding: 40px;
 }
 
 .projects a {
@@ -157,12 +173,14 @@ ul {
   background-color: black;
   position: sticky;
 }
+
+
 footer {
-  margin-top: 20px;
-  text-align: center;
+  margin-top: 40px;
   padding: 40px;
   background: black;
   color: white;
+  border-top: 5px solid #A25E1B;
 }
 
 @media (max-width: 768px) {
