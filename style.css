@@ -57,7 +57,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-between; /* o center, según lo que busques */
   align-items: center;
-  padding: 40px;
+  padding: 100px;
   border: black 2px;
 }
 .aboutContainer h3{
